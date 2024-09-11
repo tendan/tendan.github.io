@@ -6,14 +6,21 @@
     <description>Recent content in Strona główna on My New Hugo Site</description>
     <generator>Hugo</generator>
     <language>pl-pl</language>
-    <lastBuildDate>Sun, 28 Jul 2024 14:12:59 +0200</lastBuildDate>
+    <lastBuildDate>Sat, 03 Aug 2024 23:40:03 +0200</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GTA IV Installation on Linux Guide</title>
+      <link>http://localhost:1313/guides/gta-iv-linux-setup/</link>
+      <pubDate>Sat, 03 Aug 2024 23:40:03 +0200</pubDate>
+      <guid>http://localhost:1313/guides/gta-iv-linux-setup/</guid>
+      <description>&lt;p&gt;Setup guide for 1.0.8 Steam version (with Rockstar Games Launcher)&lt;/p&gt;&#xA;&lt;ol start=&#34;0&#34;&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Install GTA IV from Steam&#xA;On the first run, it will also install RGL, which requires 1GB of free space.&#xA;Funny thing is, that it uses Windows fonts by default, so if you don&amp;rsquo;t have them installed, in my case it uses Times New Roman each time I run the game.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Install DXVK (&lt;a href=&#34;https://github.com/doitsujin/dxvk/releases&#34;&gt;https://github.com/doitsujin/dxvk/releases&lt;/a&gt;)&#xA;The most important thing to make GTA IV running properly.&#xA;As the authors said: &amp;ldquo;A Vulkan-based translation layer for Direct3D 8/9/10/11 which allows running 3D applications on Linux using Wine&amp;rdquo;.&#xA;So yeah, if you used it for better performance on Windows (like me), you will be shocked how performance outstand on Linux machine, as it should in dedicated environment.&#xA;Unpack d3d9.dll and dxgi.dll from x64 (or from x32 if you&amp;rsquo;re running on 32-bits) into &amp;ldquo;GTAIV&amp;rdquo; directory inside installation root ([&amp;hellip;]/steamapps/common/Grand Theft Auto IV)&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Hello World</title>
       <link>http://localhost:1313/posts/hello-world/</link>
       <pubDate>Sun, 28 Jul 2024 14:12:59 +0200</pubDate>
       <guid>http://localhost:1313/posts/hello-world/</guid>
-      <description>Hello, World!</description>
+      <description>&lt;p&gt;Hello, World!&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
