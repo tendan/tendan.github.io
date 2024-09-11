@@ -7,12 +7,20 @@
         align-items: center;
     }
     .nav-list .nav-element {
+        padding: 1rem;
     }
 </style>
 <nav>
+    <ul class="nav-list">
+        {{ range .Site.Sections }}
+        <li class="nav-element"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
+        {{ end }}
+    </ul>
+    <!--
     <ul class="nav-list">
         <li class="nav-element">First element</li>
         <li class="nav-element">Second element</li>
         <li class="nav-element">Third element</li>
     </ul>
+    -->
 </nav>

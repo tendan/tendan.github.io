@@ -4,5 +4,10 @@
         <h1>{{ .Title }}</h1>
     </header>
     <div>{{ .Content }}</div>
+    <!--{{ $pages := where site.RegularPages "Type" "posts" }}
+    {{ $paginator := .Paginate $pages }} 
+    {{ range $paginator.Pages }}
+    <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+    {{ end }}-->
 </main>
 {{ end }}

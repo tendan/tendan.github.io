@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="pl-pl">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <meta charset="utf-8" />
+        <title> 
+GTA IV Installation on Linux Guide &ndash; My New Hugo Site 
+</title>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            body {
+                margin: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <style>
+    .page-header {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding: 10px;
+    }
+    .page-header h1 {
+        margin: 0;
+    }
+</style>
+<header class="page-header" id="top">
+    <h1>Logo</h1>
+    <style>
+    .nav-list {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        margin: 0;
+        align-items: center;
+    }
+    .nav-list .nav-element {
+    }
+</style>
+<nav>
+    <ul class="nav-list">
+        
+        <li class="nav-element"><a href="/guides/gta-iv-linux-setup/">GTA IV Installation on Linux Guide</a></li>
+        
+        <li class="nav-element"><a href="/posts/hello-world/">Hello World</a></li>
+        
+    </ul>
+    
+</nav>
+
+</header>
+ 
+<h1>GTA IV Installation on Linux Guide</h1>
+<p>Setup guide for 1.0.8 Steam version (with Rockstar Games Launcher)</p>
+<ol start="0">
+<li>
+<p>Install GTA IV from Steam
+On the first run, it will also install RGL, which requires 1GB of free space.
+Funny thing is, that it uses Windows fonts by default, so if you don&rsquo;t have them installed, in my case it uses Times New Roman each time I run the game.</p>
+</li>
+<li>
+<p>Install DXVK (<a href="https://github.com/doitsujin/dxvk/releases">https://github.com/doitsujin/dxvk/releases</a>)
+The most important thing to make GTA IV running properly.
+As the authors said: &ldquo;A Vulkan-based translation layer for Direct3D 8/9/10/11 which allows running 3D applications on Linux using Wine&rdquo;.
+So yeah, if you used it for better performance on Windows (like me), you will be shocked how performance outstand on Linux machine, as it should in dedicated environment.
+Unpack d3d9.dll and dxgi.dll from x64 (or from x32 if you&rsquo;re running on 32-bits) into &ldquo;GTAIV&rdquo; directory inside installation root ([&hellip;]/steamapps/common/Grand Theft Auto IV)</p>
+</li>
+<li>
+<p>Install ThirteenAG&rsquo;s FusionFix (<a href="https://github.com/ThirteenAG/GTAIV.EFLC.FusionFix">https://github.com/ThirteenAG/GTAIV.EFLC.FusionFix</a>)
+Unpack entire archive content into &ldquo;GTAIV&rdquo; directory from installation root</p>
+</li>
+<li>
+<p>Disable Steam Vulkan Shader Precaching
+It is required for DXVK to make it work. Don&rsquo;t make the same mistake as mine, you&rsquo;ll wait for Steam to prerender Vulkan shaders only to find out that DXVK doesn&rsquo;t work.</p>
+</li>
+<li>
+<p>Add WINEDLLOVERRIDES environment variable or (if it doesn&rsquo;t work) run winecfg on GTA IV&rsquo;s prefix with native d3d9, dxgi and dinput8 dlls
+Crucial for Wine/Proton - that instruction indicates not to override these libraries.
+n - native (use lib included with Windows or Application (GTA IV in this case))
+b - bundled (use lib bundled with Wine/Proton installation)</p>
+</li>
+</ol>
+<p>If you want to use WINEDLLOVERRIDES:
+In &ldquo;Launch game options&rdquo; provide: <code>WINEDLLOVERRIDES=&quot;dinput8,dxgi,d3d9=n,b&quot; %command</code>
+If you want (like me) to override Wine/Proton config via winecfg:
+<code>$ WINEPREFIX=&quot;&lt;path_to_pfx_gta_iv_use&gt;&quot; winecfg</code>
+In &ldquo;Libraries&rdquo; section add:
+dinput8 (native, bundled)
+dxgi (native, bundled)
+d3d9 (native, bundled)</p>
+<ol start="5">
+<li>Useful flags/running options:
+-norestriction
+-percentvidmem 100
+-availablevidmem 4096
+-nomemrestrict
+-norestrictions
+-noprecache
+-novblank</li>
+</ol>
+<p>You can add them in commandline.txt file withing &ldquo;GTAIV&rdquo; directory or &ldquo;Launch game options&rdquo; inside GTA IV&rsquo;s &ldquo;Game Properties&rdquo; on Steam</p>
+ 
+ <style>
+    .page-footer {
+        position: absolute;
+        bottom: 0;
+    }
+</style>
+<footer class="page-footer">
+    <p>Uncopyrighted</p>
+</footer>
+
+    </body>
+</html>

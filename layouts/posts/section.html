@@ -1,0 +1,7 @@
+{{ define "main" }}
+    {{ $pages := where site.RegularPages "Type" "posts" }}
+    {{ $paginator := .Paginate $pages }} 
+    {{ range $paginator.Pages }}
+    <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+    {{ end }}
+{{ end }}
