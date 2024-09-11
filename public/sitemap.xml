@@ -2,10 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://example.org/guides/gta-iv-linux-setup/</loc>
+    <lastmod>2024-08-03T23:40:03+02:00</lastmod>
+  </url><url>
     <loc>https://example.org/guides/</loc>
     <lastmod>2024-08-03T23:40:03+02:00</lastmod>
   </url><url>
+    <loc>https://example.org/posts/hello-world/</loc>
+    <lastmod>2024-07-28T14:12:59+02:00</lastmod>
+  </url><url>
     <loc>https://example.org/posts/</loc>
+    <lastmod>2024-07-28T14:12:59+02:00</lastmod>
+  </url><url>
+    <loc>https://example.org/</loc>
     <lastmod>2024-07-28T14:12:59+02:00</lastmod>
   </url><url>
     <loc>https://example.org/categories/</loc>
