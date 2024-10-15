@@ -1,0 +1,33 @@
+:root {
+    --bg-color: #1e1e1e;
+    --primary-color: #363636;
+    --secondary-color: #252525;
+    --contrast-color: #d0d0d0;
+}
+
+* {
+    box-sizing: border-box;
+    color: var(--contrast-color);
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    margin: 0;
+}
+
+.site {
+    margin: 0 0;
+}
+
+@media screen and (min-width: 900px) {
+    .site {
+        margin: 0 5%;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .site {
+        margin: 0 20%;
+    }
+}
