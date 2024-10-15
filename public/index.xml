@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
+<<<<<<< Updated upstream
     <title>Strona główna on My New Hugo Site</title>
     <link>https://example.org/</link>
     <description>Recent content in Strona główna on My New Hugo Site</description>
+=======
+    <title>Strona główna on Maciej Ślusarz</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content in Strona główna on Maciej Ślusarz</description>
+>>>>>>> Stashed changes
     <generator>Hugo</generator>
     <language>pl-pl</language>
     <lastBuildDate>Sat, 03 Aug 2024 23:40:03 +0200</lastBuildDate>

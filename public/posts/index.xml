@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
+<<<<<<< Updated upstream
     <title>Posts on My New Hugo Site</title>
     <link>https://example.org/posts/</link>
     <description>Recent content in Posts on My New Hugo Site</description>
@@ -15,5 +16,14 @@
       <guid>https://example.org/posts/hello-world/</guid>
       <description>&lt;p&gt;Hello, World!&lt;/p&gt;</description>
     </item>
+=======
+    <title>Posts on Maciej Ślusarz</title>
+    <link>https://example.org/posts/</link>
+    <description>Recent content in Posts on Maciej Ślusarz</description>
+    <generator>Hugo</generator>
+    <language>pl-pl</language>
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="https://example.org/posts/index.xml" rel="self" type="application/rss+xml" />
+>>>>>>> Stashed changes
   </channel>
 </rss>

@@ -2,15 +2,8 @@
 <html lang="{{ or site.Language.LanguageCode }}">
     <head>
         <meta charset="utf-8" />
-        <title>{{ block "title" . }} {{ .Site.Title }} {{ end }}</title>
-        <style>
-            * {
-                box-sizing: border-box;
-            }
-            body {
-                margin: 0;
-            }
-        </style>
+        <title>{{ .Title }} &ndash; {{ .Site.Title }}</title>
+        <link rel="stylesheet" href="/styles.css">
     </head>
     <body>
         {{ partial "partials/header.html" . }} {{ block "main" . }} {{ end }} {{

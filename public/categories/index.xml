@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
+<<<<<<< Updated upstream
     <title>Categories on My New Hugo Site</title>
     <link>https://example.org/categories/</link>
     <description>Recent content in Categories on My New Hugo Site</description>
+=======
+    <title>Categories on Maciej Ślusarz</title>
+    <link>https://example.org/categories/</link>
+    <description>Recent content in Categories on Maciej Ślusarz</description>
+>>>>>>> Stashed changes
     <generator>Hugo</generator>
     <language>pl-pl</language>
     <atom:link href="https://example.org/categories/index.xml" rel="self" type="application/rss+xml" />
