@@ -6,7 +6,9 @@
         <link rel="stylesheet" href="/styles.css">
     </head>
     <body>
-        {{ partial "partials/header.html" . }} {{ block "main" . }} {{ end }} {{
-        partial "partials/footer.html" . }}
+        <div class="site">
+            {{ partial "partials/header.html" . }} {{ block "main" . }} {{ end }} 
+        </div>
+        {{ partial "partials/footer.html" . }}
     </body>
 </html>

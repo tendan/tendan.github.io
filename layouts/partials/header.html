@@ -1,12 +1,24 @@
 <style>
+    @media screen and (max-width: 750px) {
+        .page-header {
+            flex-direction: column;
+        }
+    }
     .page-header {
+        margin-top: 5%;
         display: flex;
         align-items: center;
+        justify-content: space-around;
         width: 100%;
         padding: 10px;
+        background-color: var(--primary-color);
+        font-size: 20px;
     }
     .page-header h1 {
         margin: 0;
+    }
+    .page-header a, a:visited {
+        text-decoration: none;
     }
 </style>
 <header class="page-header" id="top">
