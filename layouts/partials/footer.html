@@ -2,7 +2,7 @@
     .page-footer {
         position: absolute;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         width: 100%;
         background-color: var(--primary-color);
@@ -10,5 +10,10 @@
     }
 </style>
 <footer class="page-footer">
+    <ul>
+        {{ range $.Site.Home.AllTranslations }}
+        <li><a href="{{ .RelPermalink }}">{{ .Language.LanguageName }}</a></li>
+        {{ end }}
+    </ul>        
     <p>Uncopyrighted 🅮 Maciej Ślusarz</p>
 </footer>

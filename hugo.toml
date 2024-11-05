@@ -1,3 +1,14 @@
 baseURL = 'https://example.org/'
-languageCode = 'pl-pl'
-title = 'My New Hugo Site'
+title = 'Maciej Ślusarz'
+
+[languages]
+    [languages.en]
+        disabled = false
+        languageCode = 'en'
+        languageName = 'English'
+        weight = 1
+    [languages.pl]
+        disabled = false
+        languageCode = 'pl-PL'
+        languageName = 'Polish'
+        weight = 2
