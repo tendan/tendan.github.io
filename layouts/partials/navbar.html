@@ -38,13 +38,20 @@
         position: relative;
         z-index: 2;
     }
+    .nav-list .nav-element.active {
+        background-color: var(--contrast-color);
+        color: var(--primary-color);
+    }
     .nav-list a {
         transition: all 0.1s ease-in-out;
         position: relative;
         z-index: 2;
         color: var(--contrast-color);
     }
-    .nav-list .nav-element:hover > span, .nav-list a:active > span {
+    .nav-list .nav-element.active > span {
+        color: var(--primary-color);
+    }
+    .nav-list .nav-element:hover > span {
         color: var(--primary-color);
     }
     .nav-list .nav-element:hover::after {
@@ -52,19 +59,26 @@
     }
 </style>
 <nav>
+    {{ with site.Menus.main }}
     <ul class="nav-list">
-        <a href="/">
+        
+
+        <!--<a href="/">
             <li class="nav-element"><span>Strona główna</span></li>
-        </a>
-        {{ range .Site.Sections }}
-        <a href="{{ .RelPermalink }}">
-            <li class="nav-element"><span>{{ .LinkTitle }}</span></li>
+        </a>-->
+        {{ range . }}
+        <a href="{{ .URL }}">
+            <li class="nav-element {{- if $.IsMenuCurrent .Menu . }} active {{- end }}">
+                <span>{{ .Name }}</span>
+            </li>
         </a>
         {{ end }}
-        <a href="/about">
+        
+        <!--<a href="/about">
             <li class="nav-element"><span>O mnie</span></li>
-        </a>
+        </a>-->
     </ul>
+    {{ end }}
     <!--
     <ul class="nav-list">
         <li class="nav-element">First element</li>
