@@ -1,0 +1,20 @@
+[[main]]
+    name = 'Strona główna'
+    pageRef = '/'
+    weight = 1
+[[main]]
+    name = 'Benchmarki'
+    pageRef = '/benchmarks'
+    weight = 4
+[[main]]
+    name = 'Poradniki'
+    pageRef = '/guides'
+    weight = 3
+[[main]]
+    name = 'Posty'
+    pageRef = '/posts'
+    weight = 2
+[[main]]
+    name = 'O mnie'
+    pageRef = '/about'
+    weight = 5
