@@ -10,5 +10,5 @@ title = 'Maciej Ślusarz'
     [languages.pl]
         disabled = false
         languageCode = 'pl-PL'
-        languageName = 'Polish'
+        languageName = 'Polski'
         weight = 2

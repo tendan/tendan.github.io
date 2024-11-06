@@ -4,16 +4,48 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
         width: 100%;
+        padding-top: 1vh;
         background-color: var(--primary-color);
         bottom: 0;
+        transform: translateY(100%);
+    }
+    .language-section, .social-media-section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .language-selector, .social-media-list {
+        display: flex;
+        list-style: none;
+        margin: 0 0 0 5px;
+        padding: 0;
+    }
+    .language-selector li {
+        margin: 3px;
     }
 </style>
 <footer class="page-footer">
-    <ul>
-        {{ range $.Site.Home.AllTranslations }}
-        <li><a href="{{ .RelPermalink }}">{{ .Language.LanguageName }}</a></li>
+    <div class="social-media-section">
+        <label>{{ T "social_media_info" }}</label>
+        {{ with site.Menus.socials }}
+        <ul class="social-media-list">
+            {{ range . }}
+            <a href="{{ .URL }}">
+                <li>{{ .Name }}</li>
+            </a>
+            {{ end }}
+        </ul>
         {{ end }}
-    </ul>        
-    <p>Uncopyrighted 🅮 Maciej Ślusarz</p>
+    </div>
+    <div class="language-section">
+        <label>{{ T "language_picker_info" }}:</label>
+        <ul class="language-selector">
+            {{ range $.Site.Home.AllTranslations }}
+            <li><a href="{{ .RelPermalink }}">{{ .Language.LanguageName }}</a></li>
+            {{ end }}
+        </ul>
+    </div>
+    <p>Uncopyrighted 2024 🅮 Maciej Ślusarz</p>
 </footer>

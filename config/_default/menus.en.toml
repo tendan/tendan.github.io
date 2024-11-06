@@ -18,3 +18,7 @@
     name = 'About me'
     pageRef = '/about'
     weight = 5
+
+[[socials]]
+    name = 'LinkedIn'
+    url = 'https://www.linkedin.com/in/maciej-%C5%9Blusarz-5a4804200'
