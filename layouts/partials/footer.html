@@ -4,16 +4,19 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
         width: 100%;
+        padding-top: 1vh;
         background-color: var(--primary-color);
         bottom: 0;
+        transform: translateY(100%);
     }
-    .language-section {
+    .language-section, .social-media-section {
         display: flex;
         align-items: center;
         justify-content: center;
     }
-    .language-selector {
+    .language-selector, .social-media-list {
         display: flex;
         list-style: none;
         margin: 0 0 0 5px;
@@ -24,6 +27,18 @@
     }
 </style>
 <footer class="page-footer">
+    <div class="social-media-section">
+        <label>{{ T "social_media_info" }}</label>
+        {{ with site.Menus.socials }}
+        <ul class="social-media-list">
+            {{ range . }}
+            <a href="{{ .URL }}">
+                <li>{{ .Name }}</li>
+            </a>
+            {{ end }}
+        </ul>
+        {{ end }}
+    </div>
     <div class="language-section">
         <label>{{ T "language_picker_info" }}:</label>
         <ul class="language-selector">
@@ -32,5 +47,5 @@
             {{ end }}
         </ul>
     </div>
-    <p>Uncopyrighted 🅮 Maciej Ślusarz</p>
+    <p>Uncopyrighted 2024 🅮 Maciej Ślusarz</p>
 </footer>
