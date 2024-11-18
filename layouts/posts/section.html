@@ -1,7 +1,14 @@
 {{ define "main" }}
-    {{ $pages := where site.RegularPages "Type" "posts" }}
-    {{ $paginator := .Paginate $pages }} 
-    {{ range $paginator.Pages }}
-    <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+    <ul>
+        {{ $pages := where site.RegularPages "Type" "posts" }}
+        {{ $paginator := .Paginate $pages }} 
+        {{ range $paginator.Pages }}
+        <li>
+            <h2>
+                <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+            </h2>
+            <span>{{ .Date.Local | time.Format ":date_medium" }}</span>
+        </li>
     {{ end }}
+    </ul>
 {{ end }}

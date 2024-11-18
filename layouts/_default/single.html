@@ -2,6 +2,24 @@
 {{ .Title }} &ndash; {{ .Site.Title }}
 {{ end }} 
 {{ define "main" }}
+<style>
+    p {
+        font-size: 20px;
+        padding: 1vh 1vw;
+    }
+    .profile-picture {
+        float: left;
+        padding: 1vh 1vw;
+    }
+</style>
 <h1>{{ .Title }}</h1>
-{{ .Content }} 
+<article>
+    {{ if .Params.profile }}
+        {{ $image := resources.Get (printf "/img/%s" .Params.profile )}}
+        {{ with $image }}
+            <img class="profile-picture" src="{{ ($image.Resize "400x" ).RelPermalink }}" />
+        {{ end }}
+    {{ end }}
+    {{ .Content }}
+</article>
 {{ end }}
