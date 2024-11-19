@@ -1,9 +1,43 @@
 {{ define "main" }}
-<main>
-    <header>
-        <h1>{{ .Title }}</h1>
+<style>
+    .post {
+        margin-top: 50px;
+    }
+    .post .with-cover-img {
+        position: relative;
+    }
+    .post .with-cover-img .post-metadata {
+        position: absolute;
+        bottom: 0;
+    }
+    .post .post-metadata {
+        padding: 2vw 2vh;
+    }
+    .post .post-metadata h1 {
+        font-size: 36px;
+        margin: 1vh 0;
+    }
+    .post .post-metadata {
+        text-shadow: 1px 1px 5px #333333;
+    }
+    .post article {
+        padding: 2vw 2vh;
+        font-size: 20px;
+    }
+</style>
+<main class="post">
+    <header {{ if .Params.Cover_Image }} class="with-cover-img" {{ end }}>
+    {{ if .Params.Cover_Image }}
+    {{ $cover := resources.Get (printf "/img/covers/%s" .Params.Cover_Image )}}
+        {{ with $cover.Fill "1400x500 webp q80" }}    
+            <img width="100%" src="{{ .RelPermalink }}">
+        {{ end }}
+    {{ end }}
+        <div class="post-metadata">
+            <h1>{{ .Title }}</h1>
+            <span>{{ .Date.Local | time.Format ":date_medium" }}</span>
+        </div>
     </header>
-    <span>{{ .Date.Local | time.Format ":date_medium" }}</span>
     <article>
         {{ .Content }}
     </article>
