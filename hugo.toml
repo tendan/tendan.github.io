@@ -1,5 +1,6 @@
 baseURL = 'https://example.org/'
 title = 'Maciej Ślusarz'
+defaultContentLanguage = 'en'
 
 [languages]
     [languages.en]
@@ -12,3 +13,6 @@ title = 'Maciej Ślusarz'
         languageCode = 'pl-PL'
         languageName = 'Polski'
         weight = 2
+
+[imaging]
+    quality = 75
