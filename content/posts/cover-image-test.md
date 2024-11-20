@@ -1,7 +1,6 @@
 +++
 title = 'Cover Image Test'
 date = 2024-11-19T21:14:14+01:00
-draft = true
 cover_image = 'example_cover.jpg'
 +++
 
