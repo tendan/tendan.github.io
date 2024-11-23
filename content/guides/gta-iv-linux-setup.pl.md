@@ -1,7 +1,6 @@
 +++
 title = 'GTA IV Installation on Linux Guide'
 date = 2024-08-03T23:40:03+02:00
-draft = true
 +++
 Poradnik instalacji przeznaczony dla wersji 1.0.8 (Steam + RGL)
 

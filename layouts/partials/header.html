@@ -5,7 +5,7 @@
         }
     }
     .page-header {
-        margin-top: 5%;
+        margin: 5% 0 10% 0;
         display: flex;
         align-items: center;
         justify-content: space-around;
@@ -20,8 +20,22 @@
     .page-header a, a:visited {
         text-decoration: none;
     }
+    .page-header .logo {
+        position: relative;
+    }
+    .page-header .logo img {
+        display: block;
+        margin: auto;
+        position: absolute;
+        width: 12vw;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 </style>
 <header class="page-header" id="top">
-    <h1>Logo</h1>
+    <div class="logo">
+        <img alt="My Kookaburra Logo" src="/img/my_logo.png">
+    </div>
     {{ partial "navbar" . }}
 </header>
