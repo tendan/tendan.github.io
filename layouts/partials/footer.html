@@ -42,8 +42,8 @@
     <div class="language-section">
         <label>{{ T "language_picker_info" }}:</label>
         <ul class="language-selector">
-            {{ range $.Site.Home.AllTranslations }}
-            <li><a href="{{ .RelPermalink }}">{{ .Language.LanguageName }}</a></li>
+            {{ range $.Page.AllTranslations }}
+            <li><a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a></li>
             {{ end }}
         </ul>
     </div>

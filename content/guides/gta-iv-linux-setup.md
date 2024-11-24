@@ -1,6 +1,7 @@
 +++
 title = 'GTA IV Installation on Linux Guide'
 date = 2024-08-03T23:40:03+02:00
+difficulty = 'Easy'
 +++
 Setup guide for 1.0.8 Steam version (with Rockstar Games Launcher)
 
