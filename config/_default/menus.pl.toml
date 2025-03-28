@@ -3,17 +3,17 @@
     pageRef = '/'
     weight = 1
 [[main]]
-    name = 'Benchmarki'
-    pageRef = '/benchmarks'
-    weight = 4
+    name = 'Projekty'
+    pageRef = '/projects'
+    weight = 2
 [[main]]
     name = 'Poradniki'
     pageRef = '/guides'
-    weight = 3
+    weight = 4
 [[main]]
     name = 'Posty'
     pageRef = '/posts'
-    weight = 2
+    weight = 3
 [[main]]
     name = 'O mnie'
     pageRef = '/about'

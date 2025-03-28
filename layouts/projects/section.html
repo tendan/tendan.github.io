@@ -1,0 +1,14 @@
+{{ define "main" }}
+    <ul>
+        {{ $pages := where site.RegularPages "Type" "projects" }}
+        {{ $paginator := .Paginate $pages }} 
+        {{ range $paginator.Pages }}
+        <li>
+            <h2>
+                <a href="{{ .Params.repo_link }}">{{ .LinkTitle }}</a>
+            </h2>
+            <span>{{ .Description }}</span>
+        </li>
+    {{ end }}
+    </ul>
+{{ end }}
