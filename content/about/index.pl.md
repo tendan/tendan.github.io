@@ -3,8 +3,13 @@ title = 'O mnie'
 layout = 'about'
 +++
 
-Coś tam o sobie. Jeszcze nie znam do końca samego siebie. Lorem ipsum odor amet, consectetuer adipiscing elit. Varius vulputate vitae placerat sodales quisque congue. Hac nascetur placerat ridiculus facilisi est egestas aenean nec. Felis massa ultricies adipiscing facilisis augue fermentum augue eleifend. Risus velit eleifend facilisis taciti felis ex cras. Pretium odio sit donec urna non at amet et cursus.
+# Maciej Ślusarz
 
-Sodales litora pharetra maecenas tempus nisi donec curabitur. Torquent leo est pulvinar etiam tincidunt, hac eleifend. Mus porttitor cubilia ligula nunc turpis litora fringilla nostra! Pellentesque iaculis odio dictum maecenas porttitor quis ad varius. Sit ante elit morbi magna, dis per consectetur molestie. Integer velit nostra at eros tempor vel libero. Ex consequat sollicitudin vel at eros. Ad varius varius nibh bibendum praesent primis. Feugiat magna maximus leo tempor id vivamus cubilia dictum. Dolor orci felis nibh ligula etiam libero finibus; donec erat.
+Aktualnie zgłębiam swoje doświadczenie w szeroko pojętych systemach wbudowanych (Embedded Linux czy bare metal na mikrokontrolerach (ESP32 to mój faworyt)). Interesuję mnie również tematyka języków opisu sprzętu czy ogólnie FPGA. 
 
-Proin sociosqu lectus, risus consectetur parturient mattis. Amet curabitur posuere sollicitudin cras ridiculus sodales eros. Vestibulum hac fringilla facilisi dignissim convallis efficitur primis cras. Sed eu mauris urna auctor porta curabitur? Laoreet enim porta risus mollis taciti nam taciti. Tortor accumsan placerat nec felis cursus nibh consequat elementum. Blandit finibus habitasse sociosqu venenatis maecenas rutrum ornare iaculis.
+Zajmowałem się w przeszłości fullstackiem, na pewno mogę się pochwalić umiejętnością używania Springa czy ASP.NET po stronie serwera, jak i bibliotek do frontendu takich jak React czy Vue. Zdarzyło się nawet używać Next.js.
+
+Hobbystyczny w sprawach UI/UX. Pasjonat motoryzacji, zwłaszcza modeli z lat 90. czy 00. z małymi wyjątkami (np. [Range Rover Classic](https://en.wikipedia.org/wiki/Range_Rover_Classic)). Miłośnik parzenia kawy niekonwencjonalnymi sposobami (AeroPress czy drip V60).
+Student inż. Automatyki i Robotyki
+
+(zdjęcie z lewej powstało w wyniku moich zabaw ze Stable Diffusion i ControlNet-em sterowanym lineart'em)

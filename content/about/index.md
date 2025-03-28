@@ -3,8 +3,13 @@ title = 'About me'
 layout = 'about'
 +++
 
-Something about. I don't fully know myself. Lorem ipsum odor amet, consectetuer adipiscing elit. Varius vulputate vitae placerat sodales quisque congue. Hac nascetur placerat ridiculus facilisi est egestas aenean nec. Felis massa ultricies adipiscing facilisis augue fermentum augue eleifend. Risus velit eleifend facilisis taciti felis ex cras. Pretium odio sit donec urna non at amet et cursus.
+# Maciej Ślusarz
 
-Sodales litora pharetra maecenas tempus nisi donec curabitur. Torquent leo est pulvinar etiam tincidunt, hac eleifend. Mus porttitor cubilia ligula nunc turpis litora fringilla nostra! Pellentesque iaculis odio dictum maecenas porttitor quis ad varius. Sit ante elit morbi magna, dis per consectetur molestie. Integer velit nostra at eros tempor vel libero. Ex consequat sollicitudin vel at eros. Ad varius varius nibh bibendum praesent primis. Feugiat magna maximus leo tempor id vivamus cubilia dictum. Dolor orci felis nibh ligula etiam libero finibus; donec erat.
+Currently keen on embedded software development (Embedded Linux and/or bare metal on MCU (ESP32 is my favourite)). FPGA & hardware description language enthusiast. 
 
-Proin sociosqu lectus, risus consectetur parturient mattis. Amet curabitur posuere sollicitudin cras ridiculus sodales eros. Vestibulum hac fringilla facilisi dignissim convallis efficitur primis cras. Sed eu mauris urna auctor porta curabitur? Laoreet enim porta risus mollis taciti nam taciti. Tortor accumsan placerat nec felis cursus nibh consequat elementum. Blandit finibus habitasse sociosqu venenatis maecenas rutrum ornare iaculis.
+Done something with fullstack development in the past - especially using CRUD frameworks such as Spring/ASP.NET, libraries like Vue/React or Next.js (which is frontend and backend combined).
+
+Amateur UI/UX designer. Automotive fan, especially the 90s/00s models with some exceptions ([Range Rover Classic](https://en.wikipedia.org/wiki/Range_Rover_Classic) <3). Unconventional ways of brewing coffee lover such as AeroPress or drip V60.
+Actually pursuing BSc degree in Automatics & Robotics.
+
+(picture on the left was created thanks to ControlNet conditioned on *lineart* via Stable Diffusion)
