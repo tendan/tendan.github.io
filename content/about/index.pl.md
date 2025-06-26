@@ -11,5 +11,3 @@ Zajmowałem się w przeszłości fullstackiem, na pewno mogę się pochwalić um
 
 Hobbystyczny w sprawach UI/UX. Pasjonat motoryzacji, zwłaszcza modeli z lat 90. czy 00. z małymi wyjątkami (np. [Range Rover Classic](https://en.wikipedia.org/wiki/Range_Rover_Classic)). Miłośnik parzenia kawy niekonwencjonalnymi sposobami (AeroPress czy drip V60).
 Student inż. Automatyki i Robotyki
-
-(zdjęcie z lewej powstało w wyniku moich zabaw ze Stable Diffusion i ControlNet-em sterowanym lineart'em)

@@ -11,5 +11,3 @@ Done something with fullstack development in the past - especially using CRUD fr
 
 Amateur UI/UX designer. Automotive fan, especially the 90s/00s models with some exceptions ([Range Rover Classic](https://en.wikipedia.org/wiki/Range_Rover_Classic) <3). Unconventional ways of brewing coffee lover such as AeroPress or drip V60.
 Actually pursuing BSc degree in Automatics & Robotics.
-
-(picture on the left was created thanks to ControlNet conditioned on *lineart* via Stable Diffusion)
