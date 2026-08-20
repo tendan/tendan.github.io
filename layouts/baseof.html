@@ -3,6 +3,12 @@
 <html lang="{{ or site.Language.Locale }}">
     <head>
         <meta charset="utf-8" />
+        <style>
+            .site {
+                padding-top: 5vh;
+                min-height: 100vh;
+            }
+        </style>
         <title>{{ .Title }} &ndash; {{ .Site.Title }}</title>
         {{ with $style }}<link rel="stylesheet" href="{{ .RelPermalink }}">{{ end }}
     </head>

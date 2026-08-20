@@ -16,10 +16,6 @@ body {
     margin: 0;
 }
 
-.site {
-    margin: 0 0;
-}
-
 @media screen and (min-width: 900px) {
     .site {
         margin: 0 5%;

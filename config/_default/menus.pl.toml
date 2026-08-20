@@ -4,11 +4,6 @@
   weight = 1
 
 [[main]]
-  name = 'Benchmarki'
-  pageRef = '/benchmarks'
-  weight = 4
-
-[[main]]
   name = 'Poradniki'
   pageRef = '/guides'
   weight = 3

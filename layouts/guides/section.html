@@ -1,0 +1,14 @@
+{{ define "main" }}
+    <ul>
+        {{ $pages := where site.RegularPages "Type" "guides" }}
+        {{ $paginator := .Paginate $pages }} 
+        {{ range $paginator.Pages }}
+        <li>
+            <h2>
+                <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+            </h2>
+            <span>{{ .Date.Local | time.Format ":date_medium" }}</span>
+        </li>
+    {{ end }}
+    </ul>
+{{ end }}
