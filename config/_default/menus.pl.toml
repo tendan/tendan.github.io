@@ -1,20 +1,28 @@
 [[main]]
-    name = 'Strona główna'
-    pageRef = '/'
-    weight = 1
+  name = 'Strona główna'
+  pageRef = '/'
+  weight = 1
+
 [[main]]
-    name = 'Benchmarki'
-    pageRef = '/benchmarks'
-    weight = 4
+  name = 'Benchmarki'
+  pageRef = '/benchmarks'
+  weight = 4
+
 [[main]]
-    name = 'Poradniki'
-    pageRef = '/guides'
-    weight = 3
+  name = 'Poradniki'
+  pageRef = '/guides'
+  weight = 3
+
 [[main]]
-    name = 'Posty'
-    pageRef = '/posts'
-    weight = 2
+  name = 'Posty'
+  pageRef = '/posts'
+  weight = 2
+
 [[main]]
-    name = 'O mnie'
-    pageRef = '/about'
-    weight = 5
+  name = 'O mnie'
+  pageRef = '/about'
+  weight = 5
+
+[[socials]]
+  name = 'LinkedIn'
+  url = 'https://www.linkedin.com/in/ślusarz'

@@ -61,11 +61,7 @@
 <nav>
     {{ with site.Menus.main }}
     <ul class="nav-list">
-        
 
-        <!--<a href="/">
-            <li class="nav-element"><span>Strona główna</span></li>
-        </a>-->
         {{ range . }}
         <a href="{{ .URL }}">
             <li class="nav-element {{- if $.IsMenuCurrent .Menu . }} active {{- end }}">
@@ -73,17 +69,7 @@
             </li>
         </a>
         {{ end }}
-        
-        <!--<a href="/about">
-            <li class="nav-element"><span>O mnie</span></li>
-        </a>-->
+
     </ul>
     {{ end }}
-    <!--
-    <ul class="nav-list">
-        <li class="nav-element">First element</li>
-        <li class="nav-element">Second element</li>
-        <li class="nav-element">Third element</li>
-    </ul>
-    -->
 </nav>

@@ -32,9 +32,7 @@
         {{ with site.Menus.socials }}
         <ul class="social-media-list">
             {{ range . }}
-            <a href="{{ .URL }}">
-                <li>{{ .Name }}</li>
-            </a>
+            <a href="{{ .URL }}"><li>{{ .Name }}</li></a>
             {{ end }}
         </ul>
         {{ end }}
@@ -43,9 +41,9 @@
         <label>{{ T "language_picker_info" }}:</label>
         <ul class="language-selector">
             {{ range $.Site.Home.AllTranslations }}
-            <li><a href="{{ .RelPermalink }}">{{ .Language.LanguageName }}</a></li>
+            <li><a href="{{ .RelPermalink }}">{{ .Language.Lang }}</a></li>
             {{ end }}
         </ul>
     </div>
-    <p>Uncopyrighted 2024 🅮 Maciej Ślusarz</p>
+    <p>Uncopyrighted 2024 &copy; Maciej Ślusarz</p>
 </footer>
