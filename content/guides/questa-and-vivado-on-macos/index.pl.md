@@ -10,7 +10,7 @@ Należy zainstalować OrbStack'a, aktualnie jest on najlepszym sposobem na korzy
 Osobiście polecam wybranie dystrybucji z rodziny RHEL, gdyż zapewniają one najwyższą kompatybilność z (leciwymi) narzędziami do pracy pod ASIC/FPGA. Mój wybór padł na Rocky Linux.
 Koniecznie należy wybrać architekturę x86_64, jako że każdy program w tej dziedzinie technicznej jest z myślą o tej architekturze pisany. OrbStack wykorzystuje sprzętową Rosettę do emulacji, więc skok wydajności będzie mocny w porównaniu z kontenerami Dockerowymi.
 
-(tu wstaw zdjęcie z OrbStacka z tworzenia VM)
+[Creating VM with OrbStack](images/orbstack-rocky-x86.png)
 
 Zależności jakie są potrzebne:
 
