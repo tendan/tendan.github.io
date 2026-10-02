@@ -24,7 +24,7 @@ disableDefaultLanguageRedirect = false
   resampleFilter = 'box'
 
   [imaging.jpeg]
-    quality = 75
+    quality = 96
 
   [imaging.webp]
-    quality = 75
+    quality = 98

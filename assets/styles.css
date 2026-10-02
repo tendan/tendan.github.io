@@ -28,9 +28,27 @@ body {
     }
 }
 
+article {
+  font-size: 1.2em;
+  word-spacing: 1px;
+  line-height: 1.2;
+}
+
+article figure {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-style: italic;
+  font-size: 1em;
+
+  & > figcaption {
+    margin: 1em 1em 1em 0em;
+  }
+}
+
 /* Code block styling made possible thanks to: https://charliemikels.com/projects/this-website/styling-hugo-code-blocks */
 :not(div.highlight) pre:not(:has(code > span)):has(code), div.highlight {
-  margin: 1em 0;
+  margin: 1em;
   --parent-padding-size: 0.25rem;
   --child-padding-size: 0.25rem;
   padding: var(--parent-padding-size);
