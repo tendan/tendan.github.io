@@ -6,3 +6,5 @@ hugo_stats.json
 
 # Temp
 .hugo_build.lock
+
+*.DS_Store
