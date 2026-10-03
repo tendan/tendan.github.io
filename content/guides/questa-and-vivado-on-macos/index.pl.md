@@ -1,16 +1,17 @@
 +++
-title = 'Setup Questa and Vivado on MacOS'
+title = 'Konfiguracja QuestaSim oraz Vivado 2025.2 na macOS'
 date = 2026-08-19T20:56:41+02:00
 draft = true
 tags = ["questasim", "vivado", "macos", "apple", "amd", "siemens", "altera", "orbstack", "enterprise-linux"]
 +++
 
 1. Przygotowanie środowiska pod narzędzia EDA na macOS
+
 Należy zainstalować OrbStack'a, aktualnie jest on najlepszym sposobem na korzystanie z maszyn wirtuanych na Linuxie.
 Osobiście polecam wybranie dystrybucji z rodziny RHEL, gdyż zapewniają one najwyższą kompatybilność z (leciwymi) narzędziami do pracy pod ASIC/FPGA. Mój wybór padł na Rocky Linux.
 Koniecznie należy wybrać architekturę x86_64, jako że każdy program w tej dziedzinie technicznej jest z myślą o tej architekturze pisany. OrbStack wykorzystuje sprzętową Rosettę do emulacji, więc skok wydajności będzie mocny w porównaniu z kontenerami Dockerowymi.
 
-![Creating VM with OrbStack](images/orbstack-rocky-x86.png)
+![Tworzenie wirtualnej maszyny za pomocą OrbStacka](images/orbstack-rocky-x86.png)
 
 Zależności jakie są potrzebne:
 
@@ -34,9 +35,10 @@ $ brew install --cask xquartz
 
 W jego opcjach należy włączyć poniższe:
 
-(tu screenshot z ustawień XQuartz związanymi z połączeniem SSH)
+![Okno XQuartz z ustawieniami pod SSH](images/xquartz-setup.pl.png)
 
 3. Pobranie instalatorów QuestaSim i Vivado Design Suite ze stron Altery i AMD
+
 Na hobbystyczny użytek korzystam z Questa FPGA Starter Edition (stąd w poradniku będzie widoczny instalator do tejże wersji) oraz Vivado w nienajnowszej wersji - 2025.2 ([tutaj powód](https://www.reddit.com/r/FPGA/comments/1thstyc/vivado_20261_basic_limited_debugging_xsim/?show=original)) tl;dr AMD postanowiło, że bezpłatna wersja będzie bardziej okrojona niż dotychczas - pierwotnie to nawet planowali nie wypuszczać jej na Linux'a.
 
 Nie trzeba tu za bardzo tłumaczyć, więc opowiem anegdotkę. Załatwienie licencji, odkąd Altera objęła system SSLC całkowicie, jest łatwiejsze niż jeszcze rok temu. Pamiętam jak musiałem czekać miesiąc na to, aż Intel pozwoli mi założyć konto - na swoje nieszczęście poprosiłem o to przed Świętami Bożego Narodzenia. Potem się okazało, że konieczne jest utworzenie 2FA - na szczęście tu wystarczyło jedynie 15 minut konsultacji mailowej z no-reply.
@@ -55,11 +57,12 @@ Reszta wygląda tak jak przy pozyskiwaniu pliku z licencją .dat ze strony Alter
 
 Wrzucanie plików na maszyny OrbStacka jest banalnie proste. OrbStack załącza dysk sieciowy z systemami plików dla każdej maszyny, do którego dostęp mamy chociażby z poziomu Findera (co nie jest wcale takie oczywiste). 
 
-(tutaj wrzuć zdjęcie z NFS OrbStacka)
+![Zdalny system plików OrbStacka](images/orbstack-nfs.png)
 
 Dostęp do systemu plików każdej z utworzonych maszyn jest możliwy nawet gdy są wyłączone. Dopiero wyłączenie OrbStacka pozbawia nas możliwości wygodnego przeglądania.
 
 4. Konfiguracja serwera SSH
+
 OrbStack zapewnia wbudowany serwer SSH do łączenia się z VM-ką na poziomie macOS. Problem polega na tym, że nie wspiera on ```X11Forwarding```-u. Stąd konieczne jest uruchomienie ```openssh-server``` pobranego wcześniej:
 
 ```sh
@@ -68,7 +71,7 @@ $ systemctl start sshd
 
 Warto w OrbStacku wyłączyć przekazywanie sieci lokalnych VM-ów poza naszego Maka:
 
-(tu wstaw screenshot ze stosowną opcją w OrbStacku)
+![Wyłączanie dostępu do VM z sieci lokalnej](images/orbstack-lan.png)
 
 Koniecznie należy ustawić hasło dla naszego użytkownika za pomocą:
 ```sh
@@ -84,6 +87,7 @@ $ ssh -i ~/.orbstack/ssh/id_ed25519 -Y <user>@<machine_name>.orb.local
 ```user``` to nazwa użytkownika jakiego utworzyliśmy na VM-ce, a ```machine_name``` to nazwa VM-ki podana w OrbStacku.
 
 5. Instalowanie QuestaSim
+
 Instalator QuestaSim w wersji graficznej używa instrukcji procesora, które akurat przez Rosettę nie są tłumaczone, stąd wita nas taki błąd:
 ```Illegal instruction```
 (serio, niczego innego nie dostajemy)
@@ -111,6 +115,8 @@ Przykładowy command line uruchamiający Questę:
 # Rocky VM
 $ SALT_LICENSE_SERVER=/home/tendan/LR-178485_License.dat ~/altera/25.1std/questa_fse/bin/vsim -gui
 ```
+
+(tu wstaw zdjęcie z Questy)
 
 6. Instalacja Vivado
 
@@ -151,6 +157,8 @@ $ cp /opt/udev_stub.so ~/fakelib/libudev.so.1
 $ ln -sf libudev.so.1 ~/fakelib/libudev.so
 export LD_LIBRARY_PATH=~/fakelib:$LD_LIBRARY_PATH
 ```
+
+(tu wstaw zdjęcie z Vivado)
 
 8. Wykorzystanie Automatora do ikonek w Launchpadzie pod Questę i Vivado
 

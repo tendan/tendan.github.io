@@ -1,5 +1,5 @@
 +++
-title = 'GTA IV Installation on Linux Guide'
+title = 'Instalacja GTA IV na Linuxie'
 date = 2024-08-03T23:40:03+02:00
 difficulty = 'Łatwy'
 +++
