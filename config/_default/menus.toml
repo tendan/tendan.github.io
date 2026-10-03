@@ -1,24 +1,28 @@
 [[main]]
-    name = 'Home'
-    pageRef = '/'
-    weight = 1
+  name = 'Home'
+  pageRef = '/'
+  weight = 1
+
 [[main]]
-    name = 'Projects'
-    pageRef = '/projects'
-    weight = 2
+  name = 'Guides'
+  pageRef = '/guides'
+  weight = 3
+
 [[main]]
-    name = 'Guides'
-    pageRef = '/guides'
-    weight = 4
+  name = 'Posts'
+  pageRef = '/posts'
+  weight = 2
+
 [[main]]
-    name = 'Posts'
-    pageRef = '/posts'
-    weight = 3
+  name = 'Projects'
+  pageRef = '/projects'
+  weight = 2
+
 [[main]]
-    name = 'About me'
-    pageRef = '/about'
-    weight = 5
+  name = 'About me'
+  pageRef = '/about'
+  weight = 5
 
 [[socials]]
-    name = 'LinkedIn'
-    url = 'https://www.linkedin.com/in/maciej-%C5%9Blusarz-5a4804200'
+  name = 'LinkedIn'
+  url = 'https://www.linkedin.com/in/ślusarz'

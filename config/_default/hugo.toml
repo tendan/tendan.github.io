@@ -1,0 +1,30 @@
+
+baseURL = 'https://slusa.sh/'
+title = 'Maciej Ślusarz'
+
+# Language config
+defaultContentLanguage = 'en'
+defaultContentLanguageInSubdir = false
+disableDefaultLanguageRedirect = false
+
+[languages]
+  [languages.en]
+      weight = 1
+      locale = 'en'
+      label = 'English'
+  [languages.pl]
+      weight = 2
+      locale = 'pl-PL'
+      label = 'Polski'
+
+# Imaging settings
+[imaging]
+  anchor = 'smart'
+  bgColor = 'ffffff'
+  resampleFilter = 'box'
+
+  [imaging.jpeg]
+    quality = 96
+
+  [imaging.webp]
+    quality = 98

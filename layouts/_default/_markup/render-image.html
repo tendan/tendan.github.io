@@ -1,0 +1,14 @@
+{{- $image := .Page.Resources.GetMatch .Destination -}}
+{{- $image_quality := "Lanczos" -}}
+
+{{- $resized := $image.Process "webp" -}}
+{{- if gt $image.Width 1200 }}
+{{- $resized := $image.Resize "1200x webp" -}}
+{{- end -}}
+<figure>
+  <img src="{{ $resized.RelPermalink | safeURL }}" loading="lazy"
+    alt="{{ .PlainText }}"
+    width="100%"
+    title="{{ .Title }}" />
+  <figcaption>{{ .PlainText }}</figcaption>
+</figure>

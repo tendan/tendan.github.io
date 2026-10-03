@@ -1,19 +1,20 @@
+{{- $style := resources.Get "styles.css" | minify -}}
 <!doctype html>
-<html lang="{{ or site.Language.LanguageCode }}">
+<html lang="{{ or site.Language.Locale }}">
     <head>
         <meta charset="utf-8" />
-        <title>{{ .Title }} &ndash; {{ .Site.Title }}</title>
-        <link rel="stylesheet" href="/styles.css">
         <style>
             .site {
                 padding-top: 5vh;
                 min-height: 100vh;
             }
         </style>
+        <title>{{ .Title }} &ndash; {{ .Site.Title }}</title>
+        {{ with $style }}<link rel="stylesheet" href="{{ .RelPermalink }}">{{ end }}
     </head>
     <body>
         <div class="site">
-            {{ partial "header.html" . }} {{ block "main" . }} {{ end }} 
+            {{ partial "header.html" . }} {{ block "main" . }} {{ end }}
         </div>
         {{ partial "footer.html" . }}
     </body>
